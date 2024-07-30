@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; /* Adjust size if needed */
+    font-weight: bold; /* Optional: make the text bold */
+    color: #333; /* Optional: adjust text color */
+}
+
+/* Table Styles */
+.task-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.task-table th, .task-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.task-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.task-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button.view-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.action-buttons button.view-button:hover {
+    background-color: #45a049;
+}
+
+.action-buttons button.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.action-buttons button.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Filter and Search Box Styles */
+.filter-container {
+    display: flex;
+    justify-content: center; /* Center-align the child elements */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add spacing between the filter container and the table */
+    padding: 0 20px; /* Add horizontal padding (left and right) */
+    gap: 40%; /* Add space between the filter options and the search box */
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px; /* Adjust spacing between radio buttons */
+}
+
+.filter-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust spacing between the radio button and the label text */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Adjust width as needed */
+}

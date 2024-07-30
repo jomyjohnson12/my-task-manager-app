@@ -1,0 +1,65 @@
+.task-detail {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Fixed width for image and flexible width for task-info */
+    gap: 20px;
+    max-width: 1000px; /* Adjust as needed for overall width */
+    margin: 20px auto 0; /* Center the grid container horizontally and add 20px margin from the top */
+    padding: 0 20px; /* Optional: Add padding to prevent content from touching edges */
+    max-height: 80vh; /* Set a maximum height for the grid container */
+    align-items: center; /* Center items vertically within the container */
+    justify-content: center; /* Center the grid container horizontally */
+}
+
+.task-image {
+    width: 300px; /* Fixed width for the image section */
+    display: flex;
+    align-items: center; /* Align image to the center vertically within the section */
+    justify-content: center;
+}
+
+.task-image img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically within the section */
+    height: 100%;
+    padding: 20px; /* Optional: Add padding for spacing inside the task-info section */
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+.task-info h1 {
+    margin: 0; /* Remove default margins to control spacing manually */
+}
+
+.task-info p {
+    margin: 10px 0; /* Space between paragraphs, including description */
+}
+
+.buttons {
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #28a745;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
