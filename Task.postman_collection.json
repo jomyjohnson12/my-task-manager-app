@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "5f254d96-1aaa-4866-b407-6a9516495fc4",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35102058"
+	},
+	"item": [
+		{
+			"name": "get task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getpriority",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks?priority=low",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "priority",
+							"value": "low"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "heading",
+							"value": "Test Task",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a test task",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2024-07-30",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "14:00",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "High",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef4e2a2-ac19-4f60-af31-175dbac5fe6a"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks?heading=Study&description=fulll day &date=2024-07-30&time=14:00&priority=High",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "heading",
+							"value": "Study"
+						},
+						{
+							"key": "description",
+							"value": "fulll day "
+						},
+						{
+							"key": "date",
+							"value": "2024-07-30"
+						},
+						{
+							"key": "time",
+							"value": "14:00"
+						},
+						{
+							"key": "priority",
+							"value": "High"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "heading",
+							"value": "New Task Heading",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "New Task Description",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2024-07-30",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "15:30",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "High",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef4e2b3-2f03-4ce0-94ea-c37baa8d1c1f"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
